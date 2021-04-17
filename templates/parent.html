@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{%block title%}{%endblock%}</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  {%block head%} 
+  {%endblock%}
+</head>
+<body >
+    <style>
+        .content 
+        {
+            background-color: rgb(194, 240, 248);
+        }
+    </style>
+<div class="jumbotron text-center" style="height: 200px;">
+  <h1 >{%block heading%}
+    {%endblock%}</h1>
+  <p>{%block subheading%}
+    {%endblock%}</p> 
+</div>
+{%block bodyup%} 
+{%endblock%}
+<div class="content">
+{%block content%}
+{%endblock%}
+{%block bodydown%} 
+{%endblock%}  
+</div>
+</body>
+</html>

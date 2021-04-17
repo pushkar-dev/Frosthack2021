@@ -1,0 +1,53 @@
+{%extends 'parent.html'%}
+
+{%block title%} 
+Custom application
+{%endblock%}
+
+{%block head%}
+<ul class="nav nav-tabs" style="height: 50px;">
+  <li style="float:left"><a href="#" data-toggle="pill">Home</a></li>
+  <li style="float:left"><a href="#" data-toggle="pill">Menu 1</a></li>
+  <li style="float:left"><a href="#" data-toggle="pill">Menu 2</a></li>
+  <li style="float:left"><a href="#" data-toggle="pill">Menu 3</a></li>
+  <li style="float: right"><button type="button" class="btn btn-danger" ><a href="{{url_for('logout')}}">Logout</a></button></li>
+  <li style="float: right; padding: 10px 10px;">{{user.username}}</li>
+  
+</ul>
+{%endblock%}
+
+{%block heading%} 
+Testing Website
+{%endblock%}
+
+{%block subheading%} 
+made by-@warmachine
+{%endblock%}
+
+
+
+{%block content%} 
+
+<div class="container" >
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Purpose</h3>
+        <p>Frosthack Practice</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Team DevAstaters</h3>
+        <p>
+            <ul>
+                <li>Pushkar </li>
+                <li>Himakshi</li>
+                <li>Amrendra</li>
+            </ul>
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Github Page</h3>
+        <a href="https://www.github.com/pushkar-dev" target="_blank">Visit Github</a>
+      </div>
+    </div>
+  </div>
+{%endblock%}
